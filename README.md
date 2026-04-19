@@ -1,4 +1,4 @@
-# 🧠 Self-Pruning Neural Network
+# Self-Pruning Neural Network
 
 A custom PyTorch feed-forward neural network for CIFAR-10 that **learns to prune itself** natively during the training process. 
 
@@ -6,7 +6,7 @@ Normally, deploying large neural networks is constrained by memory. Typical tech
 
 ---
 
-## ⚙️ Architecture and Logic
+## Architecture and Logic
 
 The core logic revolves around a custom mathematical layer (`PrunableLinear`) which is used exclusively to construct the network structure.
 
@@ -31,7 +31,7 @@ Output (10 logits)
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 Since this repo is self-contained with no crazy dependencies inside a single script, running it and generating all experimental proofs is a single step.
 
@@ -49,7 +49,7 @@ python self_pruning_network.py
 
 ---
 
-## 📊 Results and the Pruning Tradeoff
+## Results and the Pruning Tradeoff
 
 Sparsity is the percentage of absolute mathematical connections successfully severed and deleted. By increasing the penalty (`lambda`), we enforce extreme compression constraints resulting in the network severing up to 99.9% of its structure.
 
